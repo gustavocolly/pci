@@ -1,6 +1,6 @@
 <?php
 session_start(); // Starting Session
-$error=''; // Variable To Store Error Message
+$error=''; // Variable to Store Error Messages
 if (isset($_POST['submit'])) 
 {
 	if (empty($_POST['usuario']) || empty($_POST['password'])) 
@@ -26,7 +26,7 @@ if (isset($_POST['submit']))
 		$_SESSION['usuario']=$usuario; // Initializing Session
 		$_SESSION['password']=$password;
 		$_SESSION['session']= True;
-		header("location:/main/main.php"); // Redirecting To Other Page	
+		header("location: main.php"); // Redirecting To Other Page	
 		}
 	mysqli_close($con_mysql); // Closing Connection
 	}	
@@ -68,7 +68,7 @@ if (isset($_POST['submit']))
 <!-- Fin de Area de Errores -->
 <!-- Comienzo del pie de página -->
 <div id="footer">
-<p>Copyright &#169; Gustavo Colly - C&#243;digo Version #0.1 - 9 Abr 2016</p>
+<p>Copyright &#169; Gustavo Colly - C&#243;digo Version #0.1 - 6 Abr 2017</p>
 </div>
 <!-- Fin del pie de página -->
 </body>
